@@ -1,0 +1,24 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Build docker muli-arch images
+      run: make buildx
+
+    - name: Build docker regular images
+      run: make build
+
+    - name: Test docker regular images
+      run: make test
