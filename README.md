@@ -9,7 +9,7 @@ Docker image for [Typescript programming language](https://www.typescriptlang.or
 where:
 
 - `<version>` is the [Typescript version](TYPESCRIPT_VERSION)
-- `<types-version>` is the [@nodes/types](TYPESCRIPT_TYPES_VERSION) package version
+- `<types-version>` is the [@nodes/types package version](TYPESCRIPT_TYPES_VERSION)
 - `<tag>` is the current GitHub tag without the "v"
 
 The docker image can be found [here](https://hub.docker.com/r/rzuckerm/typescript).
